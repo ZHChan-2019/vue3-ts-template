@@ -1,5 +1,5 @@
 'feat',//新特性、新功能
-'fix',//修改bug
+'fix',//修改 bug
 'docs',//文档修改
 'style',//代码格式修改, 注意不是 css 修改
 'refactor',//代码重构
@@ -9,8 +9,10 @@
 'revert',//回滚到上一个版本
 'build',//编译相关的修改，例如发布版本、对项目构建或者依赖的改动
 
-# 提交demo
+# 提交 demo
+
 `git commit -m 'feat: addSomething'`
 
-# 新建release分支
+# 新建 release 分支
+
 `git checkout -b release`
