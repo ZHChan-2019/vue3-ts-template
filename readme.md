@@ -35,6 +35,6 @@ import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
 
 chore: 环境变量的配置
 
-# SVG图标配置
+# SVG 图标配置
 
-feat: 新增SVG图标配置和将svg封装为全局组件
+feat: 新增 SVG 图标配置和将 svg 封装为全局组件

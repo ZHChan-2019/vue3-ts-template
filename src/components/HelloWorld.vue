@@ -38,6 +38,10 @@ const handleCurrentChange = (val: number) => {
       @current-change="handleCurrentChange"
     />
   </div>
+  <div>
+    <h2>svg测试</h2>
+    <svg-icon name="IMAGE" width="100" height="100" />
+  </div>
 </template>
 
 <style scoped></style>
