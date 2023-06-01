@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 
 import { Check, Delete, Edit, Message, Star } from '@element-plus/icons-vue'
+console.log('helloword', import.meta.env)
 
 const currentPage1 = ref(5)
 const small = ref(false)
