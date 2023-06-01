@@ -21,4 +21,12 @@
 
 `pnpm i element-plus`
 
-chore: 引入 element-plus 和其图标库
+
+# element-plus国际化
+安装上element-plus国际化后发现打包不了，是因为ts不能识别这个文件`element-plus/dist/locale/zh-cn.mjs`
+所以需要加上忽略类型的检测
+```typescript
+//@ts-ignore
+import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
+```
+

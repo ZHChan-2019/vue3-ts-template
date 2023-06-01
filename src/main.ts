@@ -6,6 +6,7 @@ import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 
 // Element Plus 提供了全局配置国际化的配置
+//@ts-ignore
 import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
 
 // 获取应用实例对象
