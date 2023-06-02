@@ -5,10 +5,10 @@ import vue from '@vitejs/plugin-vue'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 import path from 'path'
 
-import { viteMockServe } from 'vite-plugin-mock'
+// import { viteMockServe } from 'vite-plugin-mock'
 
 // https://vitejs.dev/config/
-export default defineConfig(({ command }) => {
+export default ({ command }) => {
   return {
     plugins: [
       vue(),
@@ -18,9 +18,9 @@ export default defineConfig(({ command }) => {
         // Specify symbolId format
         symbolId: 'icon-[dir]-[name]',
       }),
-      viteMockServe({
-        localEnabled: command === 'serve',
-      }),
+      // viteMockServe({
+      //   localEnabled: command === 'serve',//保证开发阶段使用mock
+      // }),
     ],
     resolve: {
       alias: {
@@ -37,4 +37,4 @@ export default defineConfig(({ command }) => {
       },
     },
   }
-})
+}

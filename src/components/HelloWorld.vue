@@ -50,13 +50,11 @@ const handleCurrentChange = (val: number) => {
 </template>
 
 <style scoped lang="scss">
-
-.test_scss{
-  h2{
+.test_scss {
+  h2 {
     color: $test_color;
     font-size: 50px;
-    background-color: #FFE79B;
+    background-color: #ffe79b;
   }
 }
-
 </style>
