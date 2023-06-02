@@ -41,7 +41,22 @@ const handleCurrentChange = (val: number) => {
   <div>
     <h2>svg测试</h2>
     <svg-icon name="IMAGE" width="100" height="100" />
+    <svg-icon name="bb" width="100" height="100" />
+  </div>
+
+  <div class="test_scss">
+    <h2>测试sass</h2>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss">
+
+.test_scss{
+  h2{
+    color: $test_color;
+    font-size: 50px;
+    background-color: #FFE79B;
+  }
+}
+
+</style>
