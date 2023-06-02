@@ -59,3 +59,7 @@ plugins: [node()]
 chore: axios 二次封装 API 接口统一管理
 
 
+#  模板的路由的配置
+
+chore: 模板的路由的配置
+
