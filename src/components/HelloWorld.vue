@@ -1,7 +1,28 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref ,onMounted } from 'vue'
 
 import { Check, Delete, Edit, Message, Star } from '@element-plus/icons-vue'
+
+import request from '@/utils/request'
+
+import { test } from "@/api/user";
+
+
+
+onMounted(()=>{
+  // http://43.139.226.94/api/hello
+  let requestParams={url:'/hello',method:'get'}
+
+  request(requestParams).then(res=>{
+    console.log(res)
+  })
+
+  test().then(res=>{
+    console.log(res)
+  })
+})
+
+
 console.log('helloword', import.meta.env)
 
 const currentPage1 = ref(5)
@@ -47,6 +68,11 @@ const handleCurrentChange = (val: number) => {
   <div class="test_scss">
     <h2>测试sass</h2>
   </div>
+
+    <div>
+      测试axios二次封装
+
+    </div>
 </template>
 
 <style scoped lang="scss">
