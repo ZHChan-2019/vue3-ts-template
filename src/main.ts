@@ -27,5 +27,10 @@ app.use(gloablComponent)
 //引入模板的全局样式
 import '@/styles/index.scss'
 
+//引入路由
+import router from '@/router'
+
+//注册模板路由
+app.use(router)
 // 将应用挂载到挂载点上
 app.mount('#app')

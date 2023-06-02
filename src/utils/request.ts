@@ -7,10 +7,10 @@ let request = axios.create({
 })
 //请求拦截器
 request.interceptors.request.use((config) => {
-    //config配置对象，有headers属性请求头，经常给服务器端携带公共参数
-    //   config.headers.token = '123'
-    //   config.headers.token_my = '555'
-    return config
+  //config配置对象，有headers属性请求头，经常给服务器端携带公共参数
+  //   config.headers.token = '123'
+  //   config.headers.token_my = '555'
+  return config
 })
 //响应拦截器
 request.interceptors.response.use(

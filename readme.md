@@ -39,24 +39,23 @@ chore: 环境变量的配置
 
 feat: 新增 SVG 图标配置和将 svg 封装为全局组件
 
+chore: 未引入 mockjs
 
-chore: 未引入mockjs
-
-
-# 在vite项目中使用require.cache需要引入什么包
+# 在 vite 项目中使用 require.cache 需要引入什么包
 
 pnpm uninstall -D vite-plugin-mock mockjs
 
-pnpm uninstall  vite-plugin-node 
-
+pnpm uninstall vite-plugin-node
 
 import { defineConfig } from 'vite';
 import node from 'vite-plugin-node';
 
 export default defineConfig({
-  plugins: [node()]
+plugins: [node()]
 });
 
-# axios二次封装API接口统一管理
- 
-chore: axios二次封装API接口统一管理
+# axios 二次封装 API 接口统一管理
+
+chore: axios 二次封装 API 接口统一管理
+
+

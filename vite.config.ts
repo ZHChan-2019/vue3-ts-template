@@ -7,19 +7,17 @@ import path from 'path'
 
 // import { viteMockServe } from 'vite-plugin-mock'
 
-
-
 // https://vitejs.dev/config/
 export default ({ command }) => {
   return {
-    server:{
-      proxy:{
-        '/api':{
-          target:'http://43.139.226.94',
-          changeOrigin:true,
+    server: {
+      proxy: {
+        '/api': {
+          target: 'http://43.139.226.94',
+          changeOrigin: true,
           // rewrite: (path) => path.replace(/^\/api/, ""),
-        }
-      }
+        },
+      },
     },
     plugins: [
       vue(),
@@ -32,7 +30,6 @@ export default ({ command }) => {
       // viteMockServe({
       //   localEnabled: command === 'serve',//保证开发阶段使用mock
       // }),
-    
     ],
     resolve: {
       alias: {
